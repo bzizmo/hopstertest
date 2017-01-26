@@ -142,14 +142,14 @@ echo $antie->getRootHtmlTag($device_configuration_decoded);
 
 <!-- BODY -->
 
-<body style="background: #000;">
+<body>
 
 <!-- Add in device specific body (Plugins etc) -->
 <?php echo $antie->getDeviceBody($device_configuration_decoded); ?>
 
 <!-- Create a loading message -->
-<div id="static-loading-screen" style="position: absolute; width: 100%; height: 100%; background: #000;">
-    Application is loading...
+<div id="static-loading-screen">
+    <div class="text">Loading...</div>
 </div>
 
 <!-- Create a div to house the app -->
