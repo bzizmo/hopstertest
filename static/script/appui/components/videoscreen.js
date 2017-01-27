@@ -68,11 +68,11 @@ require.def("hopstertest/appui/components/videoscreen",
                     self.getPlayer().pause();
                 });
 
-	            var fastForward = new Button('fastForward');
-		        playerControlButtons.appendChildWidget(fastForward);
-		        fastForward.addEventListener('select', function() {
+                var fastForward = new Button('fastForward');
+                playerControlButtons.appendChildWidget(fastForward);
+                fastForward.addEventListener('select', function() {
                     var currentTime = self.getPlayer().getCurrentTime();
-		            self.getPlayer().playFrom(currentTime + 5);
+                    self.getPlayer().playFrom(currentTime + 5);
                 });
 
                 var back = new Button('back');
@@ -105,7 +105,7 @@ require.def("hopstertest/appui/components/videoscreen",
             _onKeyDown: function(ev) {
                 if(ev.keyCode == KeyEvent.VK_BACK) {
                     this.destroyPlayer();
-                } 
+                }
             },
 
             getPlayer : function() {

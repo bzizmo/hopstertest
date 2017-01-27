@@ -19,7 +19,7 @@ require.def("hopstertest/appui/components/mainscreen",
                 var self = this;
                 // It is important to call the constructor of the superclass
                 this._super("mainscreencomponent");
-                
+
                 this.verticalList = new VerticalList("container");
                 this.appendChildWidget(this.verticalList);
 
@@ -94,8 +94,8 @@ require.def("hopstertest/appui/components/mainscreen",
 
             _selectCarouselItem:function (ev,self) {
                 this.getCurrentApplication().pushComponent("maincontainer",
-                 "hopstertest/appui/components/videoscreen",
-                 {streamUrl:self.videoUrl});
+                    "hopstertest/appui/components/videoscreen",
+                    {streamUrl:self.videoUrl});
             },
 
             // Appending widgets on beforerender ensures they're still displayed
