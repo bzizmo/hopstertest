@@ -35,7 +35,7 @@ require.def("hopstertest/appui/formatters/mainmenuformatter",
                 var button, item;
                 item = iterator.next();
                 button = new Button("menuItem" + item.id);
-                button.appendChildWidget(new Image("img-menuItem", item.thumbnail, { width : 200, height: 200}));
+                button.appendChildWidget(new Image("img-menuItem", item.thumbnail, { width : 160, height: 200}));
                 button.appendChildWidget(new Label(item.title));
                 return button;
             }

@@ -33,4 +33,25 @@
     background-repeat: no-repeat;
 }
 
+#mainscreencomponent {
+    position: absolute;
+}
+
+#container {
+    position: absolute;
+    height: 720px;
+    width: 1280px;
+}
+
+#mainMenu {
+    position: absolute;
+    top: 255px;
+    left: 288px;
+}
+
+#simplecarousel_mask {
+    position: absolute !important;
+    bottom: 0;
+}
+
 

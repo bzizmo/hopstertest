@@ -167,7 +167,6 @@ initial element background in the base stylesheet, not in dynamically loaded sty
 }
 
 .button {
-    background-color: #DCDCDC;
     display: block;
     text-align: center;
     max-width: 600px;
@@ -177,7 +176,7 @@ initial element background in the base stylesheet, not in dynamically loaded sty
 }
 
 .buttonFocussed {
-    background-color: #FFD700;
+    box-shadow: 0px 0px 0px 4px #0679ac inset;
     color: #000000;
 }
 
@@ -215,15 +214,59 @@ initial element background in the base stylesheet, not in dynamically loaded sty
     background-color: rgba(0, 0, 0, 0.5);
     display: block;
     text-align: center;
-    padding: 8px;
     color: #000000;
+    bottom: 20px;
+    left: 415px;
 }
 
 #playerButtons .button {
-    width: 75px;
-    padding: 10px;
+    width: 60px;
+    height: 60px;
     text-align: center;
     margin: 5px;
+    background-size: 60px;
+    box-shadow: none !important;
+    background-position: center;
+}
+
+#rewind{
+    background-image: url("../img/player/button-rewind.png");
+    background-repeat: no-repeat;
+}
+#rewind.focus{
+    background-image: url("../img/player/button-rewind-selected.png");
+}
+
+#play{
+    background-image: url("../img/player/button-play.png");
+    background-repeat: no-repeat;
+}
+#play.focus{
+    background-image: url("../img/player/button-play-selected.png");
+}
+
+#pause{
+    background-image: url("../img/player/button-pause.png");
+    background-repeat: no-repeat;
+}
+#pause.focus{
+    background-image: url("../img/player/button-pause-selected.png");
+}
+
+#fastForward{
+    background-image: url("../img/player/button-fast-forward.png");
+    background-repeat: no-repeat;
+}
+#fastForward.focus{
+    background-image: url("../img/player/button-fast-forward-selected.png");
+}
+
+#back{
+    background-image: url("../img/player/back.png");
+    background-repeat: no-repeat;
+}
+#back.focus{
+    background-image: url("../img/player/back_selected.png");
 }
 
 /* Display & Visibility Helpers */
